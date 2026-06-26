@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="Vaddiwas.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/hbd.png">
+  <title>Happy Birthday!</title>
+</head>
+<body>
+  <audio id="birthday-song" src="birthday-song.mp3" preload="auto" loop></audio>
+
+  <div class="bg" id="content">
+    <div class="container" id="timer">
+      <h5>Countdown to Harshada's Birthday:</h5>
+      <ul>
+        <li><span id="days"></span>Days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
+
+    <div id="slideSatu" class="animate__animated animate__slideInDown animate__slow d-none">
+      <img src="./img/hbd1.png" alt="Happy Birthday Image" class="img">
+    </div>
+    <p id="tapSatu" class="d-none animate__animated animate__pulse text-muted animate__slow animate__infinite">Tap to continue</p>
+
+    <div id="slideDua" class="slides d-none paper animate__zoomInDown animate__animated animate__delay-2s animate__slow">
+      <div class="paper-content">
+        <p id="teks1" class="teks"></p>
+      </div>
+    </div>
+    <p id="tapDua" class="d-none animate__animated animate__pulse text-muted animate__slow animate__infinite">Tap to continue</p>
+
+    <div id="slideTiga" class="slides d-none paper animate__fadeInRight animate__animated">
+      <div class="paper-content">
+        <p id="teks2" class="teks"></p>
+      </div>
+    </div>
+    <p id="tapTiga" class="d-none animate__animated animate__pulse text-muted animate__slow animate__infinite">Tap to continue</p>
+
+    <div class="kotak d-none slides animate__animated animate__fadeInDown animate__delay-2s" id="slideEmpat">
+      <div class="row">
+        <div class="col-sm mt-1">
+          <h5>Will you accept this birthday wish?</h5>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-4 offset-2">
+          <button id="gak" class="btn btn-outline-danger animate__animated animate__bounce">NO!</button>
+        </div>
+        <div class="col-4">
+          <button id="suka" class="btn btn-outline-info">YES!!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Virtual Cake Slide -->
+    <div id="slideCake" class="d-none animate__animated animate__zoomIn">
+      <img src="./img/hbd.png" alt="Birthday Cake" class="cake-img" onerror="this.style.display='none'; document.getElementById('cakeFallback').style.display='block';">
+      <div id="cakeFallback" class="cake-fallback d-none">🎂</div>
+      <p class="cake-text">Cut the cake!</p>
+      <button id="cutCakeBtn" class="btn btn-success">Cut Cake</button>
+    </div>
+
+    <p id="trims" class="text-muted d-none mt-2"></p>
+
+    <!-- Final Thank You Slide -->
+    <div id="slideFinal" class="d-none animate__animated animate__fadeIn">
+      <h3>Happy Birthday! 🎉</h3>
+      <p>Thank you for accepting this wish. Wishing you a year full of joy and love!</p>
+      <i class="fas fa-gift fa-3x text-primary"></i>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/61e5120832.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="janamdiwas.js"></script>
+</body>
+</html>
